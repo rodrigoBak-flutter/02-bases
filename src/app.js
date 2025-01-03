@@ -1,4 +1,16 @@
 
+const { buildLogger}  = require('./plugins');
+
+const logger = buildLogger('app.js');
+
+logger.log('Hello word!');
+logger.error('Ups! something went wrong!');
+
+
+
+
+/*
+
 const getPokemonById  = require('./js-foundation/06-promises');
 
 
@@ -9,10 +21,6 @@ getPokemonById(4)
 ;
 
 
-
-
-
-/*
 TODO: Factory Function, inyeccion de dependencias
 
 //const {emailTemplate} = require('./js-foundation/01-template');
